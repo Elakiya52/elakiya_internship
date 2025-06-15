@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  margin: 40px;
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  gap: 40px;              /* space between login & signup boxes */
+  justify-content: center;
+  flex-wrap: wrap;        /* allows stacking on small screens */
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 250px;           /* 🔹 box width */
+}
+
+input, textarea, select, button {
+  padding: 5px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.error {
+  background: #ffdddd;
+  color: red;
+}
+
+.success {
+  background: #ddffdd;
+  color: green;
+}
