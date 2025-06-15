@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirect to PHP</title>
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Welcome to My Site</h1>
-    <p>Click below to open the PHP version:</p>
+<h2 style="text-align: center;">Login / Signup</h2>
 
-    <a href="index.php">Go to PHP Login Page</a>
+<!-- Static Message Placeholder -->
+<div class="message error">[Error message here]</div>
+<div class="message success">[Success message here]</div>
+
+<div class="container">
+
+    <!-- 🔐 Login Form (no real action) -->
+    <form method="POST" action="index.php">
+        <h3>Login</h3>
+        <input type="text" name="login_username" required placeholder="Username">
+        <input type="password" name="login_password" required placeholder="Password">
+        <button name="login">Login</button>
+    </form>
+
+    <!-- 📝 Signup Form (no real action) -->
+    <form method="POST" action="index.php">
+        <h3>Signup</h3>
+        <input type="text" name="signup_username" required placeholder="Username">
+        <input type="email" name="signup_email" required placeholder="Email">
+        <input type="password" name="signup_password" required placeholder="Password">
+        <button name="signup">Signup</button>
+    </form>
+
+</div>
+
+<!-- 🔗 Link to index.php (real PHP page) -->
+<p style="text-align:center; margin-top:20px;">
+    <a href="index.php">Go to Functional PHP Version</a>
+</p>
 
 </body>
 </html>
